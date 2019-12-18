@@ -63,17 +63,21 @@
     <script id="new-note-template" type="text/x-handlebars-template">
       <div id="new-note" class="block-wrapper">
         <form id="new-note-form">
-          <div>
+          <fieldset>
             <textarea name="message" type="text" maxlength=200 placeholder="message (max. 200 characters)" required></textarea>
-          </div>
-          <div>
+          </fieldset>
+          <fieldset>
             <input name="imgSrc" type="text" placeholder="image url (url should include file extension)" required />
-            <small style="font-size: 10px;">Tip: find the image you want online, right click, select "copy image location", then paste the url here</small>
-          </div>
-          <div>
+            <small style="font-size: 10px;">
+              [Tip]<br/>
+              Find the image you want online, right click, select "copy image location", then paste the url here.<br/>
+              Giphy tutorial see <a href="giphy-tutorial.gif">here</a>
+            </small>
+          </fieldset>
+          <fieldset>
             <input name="submitter" type="text" placeholder="your name" required />
-          </div>
-          <div>
+          </fieldset>
+          <fieldset>
             <div class="gem-option">
               <input type="radio" id="gem-type-1" name="gemType" value="1" checked="checked"><label for="gem-type-1"></label>
             </div>
@@ -92,10 +96,10 @@
             <div class="gem-option">
               <input type="radio" id="gem-type-6" name="gemType" value="6"><label for="gem-type-6"></label>
             </div>
-          </div>
-          <div>
+          </fieldset>
+          <fieldset>
             <button type="submit">SEND</button>
-          </div>
+          </fieldset>
         </form>
       </div>
     </script>

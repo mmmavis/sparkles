@@ -8,6 +8,8 @@
 @submit-btn-bg-active: #f961b5;
 @note-text-color: #000000;
 @submitter-text-color: #000000;
+@link-color: #a88beb;
+@link-color-active: #6a3ada;
 
 @note-side-margin: 50px;
 @form-field-border-color: #555555;
@@ -46,11 +48,16 @@ img {
   max-width: 100%;
 }
 
+fieldset {
+  margin: 0 0 18px 0;
+  padding: 0;
+  border: none;
+}
+
 input,
 textarea {
   padding: 5px;
   width: 100%;
-  margin-bottom: 20px;
   background: transparent;
   border: 1px solid @form-field-border-color;
   border-radius: @border-radius;
@@ -81,12 +88,12 @@ button {
 }
 
 a {
-  color: #9dff9d;
+  color: @link-color;
 
   &:hover,
   &:active,
   &:focus {
-    color: #1de21d;
+    color: @link-color-active;
   }
 }
 
@@ -198,7 +205,6 @@ a {
       color: #aaa;
       display: block;
       margin-top: 2px;
-      margin-bottom: 10px;
     }
   }
 
