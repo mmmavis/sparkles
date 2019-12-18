@@ -14,7 +14,7 @@ function addGlitters() {
 
     const delay = Math.random() + 's';
     const el = document.createElement('img')
-    el.src            = '/assets/glitter.svg'
+    el.src            = 'assets/glitter.svg'
     el.className      = 'glitter-star'
     el.style.top      = parseInt(myRand() * document.body.scrollHeight) + 'px'
     el.style.left     = parseInt(myRand() * document.body.scrollWidth) + 'px'
